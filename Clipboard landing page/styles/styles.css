@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    width: auto;
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 310px;
+    width: 100%;
+    padding: 0%;
+}
+
+.background_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+.logo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; 
+    height:auto;
+    z-index: 2;
+}
+
+/* This is the styling for the text*/
+
+.text_edit {
+    padding-left: 27%;
+    padding-right: 27%;
+    text-align: center;
+    top: 0px;
+    padding-top: 0%;
+    margin-top: 0%;
+
+}
+
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    /* This is for all the header texts */
+    src: url('/styles/fonts/Bai_Jamjuree/BaiJamjuree-SemiBold.ttf') format('truetype');
+    font-weight: 600; 
+}
+
+@font-face {
+    font-family: 'Bai JamjureeP';
+    /*This is for the font for the paragraph*/
+    src: url('/styles/fonts/Bai_Jamjuree/BaiJamjuree-Regular.ttf') format('truetype');
+    font-weight: 400; 
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    color:   hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-family: 'Bai Jamjuree';
+    margin-top: 0%;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    font-family: 'Bai JamjureeP';
+    line-height: 25px;
+    font-size: 16.5px;
+}
+
+.first_paragraph{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2{
+    color:  hsl(210, 10%, 33%);
+    text-align: center;
+    font-family: 'Bai Jamjuree';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+
+h3{
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree';
+}
+
+.second_paragraph{
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 6%;
+}
+
+
+/* This is the button styling */
+
+.little_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 8%;
+    border-radius: 40px;
+    width: 14%;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Bai Jamjuree';
+}
+#iOS_dl {
+    background-color: hsl(171, 66%, 44%);
+    border: 10px;
+    color: white;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(133, 245, 186, 0.651);
+}
+
+#Mac_dl {
+    background-color: hsl(233, 100%, 69%);
+    border: 10px;
+    color: white;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(158, 177, 252, 0.731);
+}
+
+button:hover {
+    transform: scale(1.01);
+    filter: brightness(1.19);
+    
+}
+
+#iOS_dl:hover {
+    box-shadow: 0px 4px 8px rgba(133, 245, 186, 0.651);
+    overflow: visible;
+    transition: transform 0.1s ease, filter 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+
+}
+
+#Mac_dl:hover {
+    box-shadow: 0px 4px 8px rgba(158, 177, 252, 0.731);
+    overflow: visible;
+    transition: transform 0.1s ease, filter 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+/* This is the styling for the second part */
+
+.computer{
+    width: 670px;
+    transform: translateX(-50px);
+}
+
+.computer2 {
+    width: 650px;          
+    overflow: hidden; 
+    flex-shrink: 0;
+}
+
+.computer_and_text {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    padding-right: 5%;
+    text-justify: auto;
+    flex-direction: row;
+}
+
+.text_flex_edit {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-right: 8%;
+    line-height: 2;
+    padding-bottom: 14%;
+}
+
+.text_flex_edit p {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+
+/* This is the code for the third part */
+
+.devices_and_text {
+    text-align: center;
+    justify-content: center;
+}
+.devices_and_text p{
+    padding-left: 26%;
+    padding-right: 26%;
+}
+
+.devices {
+    padding-top: 8%;
+    padding-bottom: 4%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* This is the code for the fourth part*/
+
+.fourth_h2_p {
+    text-align: center;
+}
+
+.icons_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    gap: 2%;
+    line-height: 2;
+}
+
+.icons_text p {
+    font-size: 15px;
+    line-height: 27px;
+}
+
+.icons_text img {
+    margin-top: 18%;
+    width: 37px;
+    margin-bottom: 15px;
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 330px;
+}
+
+.special-case{
+    margin-top: 25px;
+}
+
+.special-case2 {
+    margin-top: 7px;
+}
+
+
+.brand-names {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 9%;
+}
+
+
+/* This is the fifth part*/
+
+.fifth-text {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 25px;
+}
+
+.bottom-btn {
+    padding-bottom: 40px;
+}
+
+
+/* This is the footer*/
+.footer {
+    background-color: hsl(0, 0%, 96%);
+    padding: 15px 150px;
+    font-family: 'Bai JamjureeP';
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap;
+
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-img img {
+    padding-top: 10px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+    
+.footer-links{
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-right: 90px;
+    padding-bottom: 10px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-size: 17px;
+}
+
+.footer-links :hover {
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+} 
+
+.footer-row1 {
+    padding-top: 10px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer-row2 {
+    padding-top: 10px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer-row3 {
+    padding-top: 10px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 35px;
+}
+
+.icons svg{
+    fill: hsl(210, 10%, 33%);
+    width: 24px;
+    height: 24px;
+}
+
+.icons:hover svg {
+    fill: hsl(171, 66%, 44%);
+    cursor: pointer;
+  }
+
+
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .text_edit,
+    .second_paragraph,
+    .devices_and_text p,
+    .fifth-text {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  
+    .little_box {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 80%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .computer_and_text {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10%;
+      text-align: center;
+    }
+  
+    .computer2,
+    .computer {
+      width: 100%;
+      transform: none;
+    }
+  
+    .text_flex_edit {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .icons_text {
+      flex-direction: column;
+      gap: 30px;
+      padding: 0 10%;
+    }
+  
+    .brand-names {
+      flex-direction: column;
+      gap: 40px;
+      padding: 10% 0;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-right: 0;
+    }
+  
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+    }
+  }
